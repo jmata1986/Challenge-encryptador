@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Text Encoder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Enigma Text Encoder</h1>
+    </header>
+    <main>
+        <section>
+            <div class="input-container">
+                <label for="inputText">Texto de entrada</label>
+                <textarea id="inputText" placeholder="Ingresa tu texto aquí"></textarea>
+            </div>
+            <div class="button-container">
+                <button id="encryptBtn" class="enigma-button">Encriptar</button>
+                <button id="decryptBtn" class="enigma-button">Desencriptar</button>
+            </div>
+            <div class="output-container">
+                <label for="outputText">Resultado</label>
+                <textarea id="outputText" placeholder="Resultado aquí" readonly></textarea>
+            </div>
+            <button id="copyBtn" class="copy-button">Copiar al portapapeles</button>
+            <div id="loadingBar"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Creado por [Tu Nombre] - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

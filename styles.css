@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg.webp');
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-container, .output-container {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.enigma-button {
+    width: 120px;
+    height: 120px;
+    background-image: url('button_encrypt.png.webp');
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    font-size: 1em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enigma-button:active {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.copy-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #ff6600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+.copy-button:active {
+    box-shadow: 0 0 10px #ff6600;
+}
+
+#loadingBar {
+    width: 0;
+    height: 5px;
+    background: #00ff00;
+    margin-top: 10px;
+    transition: width 3s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes rotate-right {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(360deg); }
+    50% { transform: rotate(550deg); }
+    75% { transform: rotate(850deg); }
+    100% { transform: rotate(870deg); }
+}
+
+@keyframes rotate-left {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-360deg); }
+    50% { transform: rotate(-550deg); }
+    75% { transform: rotate(-850deg); }
+    100% { transform: rotate(-870deg); }
+}
+
+.rotate-right {
+    animation: rotate-right 3s ease-in-out;
+}
+
+.rotate-left {
+    animation: rotate-left 3s ease-in-out;
+}
+
+#outputText {
+    color: #ff6600; /* Neon effect color */
+    text-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 15px #ff6600;
+}
